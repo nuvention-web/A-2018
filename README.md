@@ -1,4 +1,12 @@
+# Ver.ID - Credential Verification Platform #
+![Ver.ID Logo](http://i68.tinypic.com/nqpw7m.jpg)
 
-Link to Wiki: https://github.com/nuvention-web/A-2018/wiki
+### Ver.ID is for job seekers with a long history of degrees, job positions, and/or certifications Who want/needs an efficient and transparent process for verifying credentials each time s/he applies to a new job or institution
+---
+Link to Wiki Page: https://github.com/nuvention-web/A-2018/wiki
 
-Crypt.ID is for job seekers with a long history of degrees, job positions, and/or certifications Who want/needs an efficient and transparent process for verifying credentials each time s/he applies to a new job or institution
+---
+## Demo
+[Click Here to view a mockup demo](https://invis.io/KWGB1G9RA3H)  
+
+The mockups are interactive and will guide your through the process flow.
