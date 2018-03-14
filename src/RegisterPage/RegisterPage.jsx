@@ -14,7 +14,8 @@ class RegisterPage extends React.Component {
                 lastName: '',
                 username: '',
                 password: '',
-                confirm: ''
+                confirm: '',
+                experiences: [], //How to store 
             },
             submitted: false,
             ifSame: false

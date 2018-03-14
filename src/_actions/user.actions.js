@@ -8,7 +8,8 @@ export const userActions = {
     logout,
     register,
     getAll,
-    delete: _delete
+    delete: _delete,
+    addExp,
 };
 
 function login(username, password) {
@@ -96,4 +97,23 @@ function _delete(id) {
     function request(id) { return { type: userConstants.DELETE_REQUEST, id } }
     function success(id) { return { type: userConstants.DELETE_SUCCESS, id } }
     function failure(id, error) { return { type: userConstants.DELETE_FAILURE, id, error } }
+}
+
+function addExp(id){
+    return dispatch => {
+        dispatch(request(id));
+        userService.addExp(id)
+            .then(
+                user => {
+                    dispatch(success(id));
+                },
+                error => {
+                    dispatch(failure(id, error));
+                }
+            );
+    };
+
+    function request(id) { return { type: userConstants.ADDEXP_REQUEST, id } }
+    function success(id) { return { type: userConstants.ADDEXP_SUCCESS, id } }
+    function failure(id, error) { return { type: userConstants.ADDEXP_FAILURE, id, error} }
 }

@@ -120,6 +120,29 @@ export function configureFakeBackend() {
                     return;
                 }
 
+                //add experience
+                if (url.match(/\/users\/\d+$/) && opts.method === 'ADDEXP'){
+                    if (opts.headers && opts.headers.Authorization === 'Bearer fake-jwt-token') {
+                        // find user by id in users array
+                        let urlParts = url.split('/');
+                        let id = parseInt(urlParts[urlParts.length - 1]);
+                        let matchedUsers = users.filter(user => { return user.id === id; });
+                        let user = matchedUsers.length ? matchedUsers[0] : null;
+                        
+                        user.experiences.setItem({ company: "UESTC"});
+                        //for (let i = 0; i < users.length; i++){
+                        //    if (user.id === id){
+                        //        user.experiences.append({ company: "UESTC"});
+                        //}
+                        //}
+                        localStorage.setItem('users', JSON.stringify(users));
+                        // respond 200 OK with user
+                        resolve({ ok: true, json: () => user});
+                    } else {
+                        // return 401 not authorised if token is null or invalid
+                        reject('Unauthorised');
+                    }
+                }
                 // pass through any requests not handled above
                 realFetch(url, opts).then(response => resolve(response));
 

@@ -7,7 +7,8 @@ export const userService = {
     getAll,
     getById,
     update,
-    delete: _delete
+    delete: _delete,
+    addExp,
 };
 
 function login(username, password) {
@@ -95,4 +96,13 @@ function handleResponse(response) {
     }
 
     return response.json();
+}
+
+function addExp(id){
+    const requestOptions = {
+        method: 'ADDEXP',
+        headers: authHeader()
+    };
+
+    return fetch('/users/' + id, requestOptions).then(handleResponse);;
 }
