@@ -14,8 +14,8 @@ The mockups are interactive and will guide your through the process flow.
 To run the app locally:
 
 ```bash
-git clone https://github.com/mzabriskie/react-example.git
-cd react-example
+git clone https://github.com/nuvention-web/A-2018.git
+cd A-2018
 npm run setup
 npm run dev
 open http://localhost:8080
