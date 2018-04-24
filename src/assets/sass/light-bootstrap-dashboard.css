@@ -7909,6 +7909,32 @@ form label.radio, form label.checkbox {
   .card-stats .numbers p {
     margin: 0; }
 
+.card-stats .names {
+  color: #d8ca02;
+  margin-right: 4px;
+  font-size: 1em;
+  text-align: right; }
+  .card-stats .names p {
+    margin-left: 10px; }
+
+.card-stats2 .numbers {
+  font-size: 1.5em;
+  text-align: left; }
+  .card-stats2 .numbers p {
+    margin: 0; }
+
+.card-stats2 .numbers2 {
+  font-size: 1em;
+  text-align: left; }
+  .card-stats2 .numbers2 p {
+    margin: 0; }
+
+.card-stats2 .names {
+  color: #d8ca02;
+  margin-top: 10px;
+  font-size: 1em;
+  text-align: left; }
+
 .panel {
   border: 0;
   border-bottom: 1px solid #DDDDDD;
