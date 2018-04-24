@@ -6,7 +6,7 @@ import ChartistGraph from "react-chartist";
 import { VectorMap } from "react-jvectormap";
 
 import Card from "components/Card/Card.jsx";
-import StatsCard from "components/Card/StatsCard.jsx";
+import ExperienceCard from "components/Card/ExperienceCard.jsx";
 import Tasks from "components/Tasks/Tasks.jsx";
 
 import {
@@ -58,17 +58,17 @@ class Dashboard extends Component {
       <div className="main-content">
         <Grid fluid>
           <Row>
-            <Col lg={3} sm={6}>
-              <StatsCard
+            <Col lg={5} sm={9}>
+              <ExperienceCard
                 bigIcon={<i className="pe-7s-portfolio text-verid" />}
-                statsText="Experience"
-                statsValue="3"
-                statsValue2="Pending: 1"
-                statsIcon={<i className="fa fa-arrow-right" />}
-                statsIconText="See all"
+                statsText="Marketing Analyst"
+                statsValue="Delta Corp"
+                statsValue2="April 2015 &nbsp; - &nbsp; January 2018" 
+                statsIcon={<i className="fa fa-check-circle"  />}
+                statsIconText="Verified OnBlock&#8482; "
               />
             </Col>
-            <Col lg={3} sm={6}>
+     {/*        <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-study text-verid" />}
                 statsText="Education"
@@ -78,7 +78,7 @@ class Dashboard extends Component {
                 statsIconText="See all"
               />
             </Col>
-        {/*    <Col lg={3} sm={6}>
+            <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-graph1 text-danger" />}
                 statsText="Errors"
@@ -97,26 +97,7 @@ class Dashboard extends Component {
               />
             </Col> */}
           </Row>
-          <Row>
-            <Col md={12}>
-              <Card
-                title="Recent Activity"
-                content={
-                  <Row>
-                    <Col md={5}>
-                      <div className="table-responsive">
-                        <table className="table">
-                          <tbody>{this.createTableData()}</tbody>
-                        </table>
-                      </div>
-                    </Col>
-                  
-                  </Row>
-                }
-              />
-            </Col>
-  
-          </Row>
+       
         </Grid>
       </div>
     );
