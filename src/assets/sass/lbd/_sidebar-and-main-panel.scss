@@ -116,10 +116,10 @@
         }
 
         .simple-text{
-            text-transform: uppercase;
-            padding: $padding-small-vertical $padding-zero;
+            padding-top: 10px;
+            font-weight: bold;
             display: inline-block;
-            font-size: $font-size-large;
+            font-size: 20px;
             font-weight: $font-weight-normal;
             line-height: 30px;
             white-space: nowrap;

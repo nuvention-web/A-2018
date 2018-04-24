@@ -1,5 +1,6 @@
 import Dashboard from "views/Dashboard/Dashboard.jsx";
 import Experience from "views/Dashboard/Experience.jsx";
+import Education from "views/Dashboard/Education.jsx";
 import Buttons from "views/Components/Buttons.jsx";
 import GridSystem from "views/Components/GridSystem.jsx";
 import Panels from "views/Components/Panels.jsx";
@@ -41,10 +42,10 @@ var dashboardRoutes = [
     component: Experience
   },
   {
-    path: "#",
+    path: "/education",
     name: "Education",
     icon: "pe-7s-study",
-    component: Calendar
+    component: Education
   },
   {
     path: "#",

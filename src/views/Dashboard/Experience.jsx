@@ -67,7 +67,22 @@ class Dashboard extends Component {
                 statsIcon={<i className="fa fa-check-circle"  />}
                 statsIconText="Verified OnBlock&#8482; "
               />
-            </Col>
+          </Col>
+</Row>
+           <Row>
+            <Col lg={5} sm={9}>
+              <ExperienceCard
+                bigIcon={<i className="pe-7s-portfolio text-verid" />}
+                statsText="Product Manager"
+                statsValue="ABC Inc"
+                statsValue2="February 2018 &nbsp; - &nbsp; April 2018" 
+                statsIcon={<i className="fa fa-close"  />}
+                statsIconText="Not Verified "
+              />
+          </Col>
+
+
+
      {/*        <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-study text-verid" />}
