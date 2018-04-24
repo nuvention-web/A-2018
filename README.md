@@ -10,3 +10,13 @@ Link to Wiki Page: https://github.com/nuvention-web/A-2018/wiki
 [Click Here to view a mockup demo](https://invis.io/KWGB1G9RA3H)  
 
 The mockups are interactive and will guide your through the process flow.
+
+To run the app locally:
+
+```bash
+git clone https://github.com/mzabriskie/react-example.git
+cd react-example
+npm run setup
+npm run dev
+open http://localhost:8080
+```
