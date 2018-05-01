@@ -11,6 +11,7 @@ import Typography from "views/Components/Typography.jsx";
 import RegularForms from "views/Forms/RegularForms.jsx";
 import ExtendedForms from "views/Forms/ExtendedForms.jsx";
 import ValidationForms from "views/Forms/ValidationForms.jsx";
+import RequestForm from "views/Forms/RequestForm.jsx";
 import Wizard from "views/Forms/Wizard/Wizard.jsx";
 import RegularTables from "views/Tables/RegularTables.jsx";
 import ExtendedTables from "views/Tables/ExtendedTables.jsx";
@@ -48,10 +49,10 @@ var dashboardRoutes = [
     component: Education
   },
   {
-    path: "#",
+    path: "/forms/RequestForm",
     name: "Report",
     icon: "pe-7s-note2",
-    component: Calendar
+    component: RequestForm
   },
   
   
