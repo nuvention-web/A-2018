@@ -73,17 +73,16 @@ class Sidebar extends Component {
         <div className="logo">
           <a
             href="https://www.veryverid.com"
-            className="simple-text logo-mini"
-          >
+            className="simple-text logo-mini">
             <div className="logo-img">
-              <img src={logo} alt="react-logo" />
+              <img src={logo} alt="verid-logo" />
             </div>
           </a>
           <a
             href="https://www.veryverid.com"
             className="simple-text logo-normal"
           >
-            VerID
+            Ver ID
           </a>
         </div>
         <div className="sidebar-wrapper" ref="sidebarWrapper">

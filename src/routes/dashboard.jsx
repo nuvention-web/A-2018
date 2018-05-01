@@ -1,5 +1,6 @@
 import Dashboard from "views/Dashboard/Dashboard.jsx";
 import Experience from "views/Dashboard/Experience.jsx";
+import Education from "views/Dashboard/Education.jsx";
 import Buttons from "views/Components/Buttons.jsx";
 import GridSystem from "views/Components/GridSystem.jsx";
 import Panels from "views/Components/Panels.jsx";
@@ -10,6 +11,7 @@ import Typography from "views/Components/Typography.jsx";
 import RegularForms from "views/Forms/RegularForms.jsx";
 import ExtendedForms from "views/Forms/ExtendedForms.jsx";
 import ValidationForms from "views/Forms/ValidationForms.jsx";
+import RequestForm from "views/Forms/RequestForm.jsx";
 import Wizard from "views/Forms/Wizard/Wizard.jsx";
 import RegularTables from "views/Tables/RegularTables.jsx";
 import ExtendedTables from "views/Tables/ExtendedTables.jsx";
@@ -41,16 +43,16 @@ var dashboardRoutes = [
     component: Experience
   },
   {
-    path: "#",
+    path: "/education",
     name: "Education",
     icon: "pe-7s-study",
-    component: Calendar
+    component: Education
   },
   {
-    path: "#",
+    path: "/forms/RequestForm",
     name: "Report",
     icon: "pe-7s-note2",
-    component: Calendar
+    component: RequestForm
   },
   
   
