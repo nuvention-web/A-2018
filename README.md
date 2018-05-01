@@ -1,5 +1,5 @@
 # Ver.ID - Credential Verification Platform #
-![Ver.ID Logo](http://i68.tinypic.com/nqpw7m.jpg)
+[![Ver.ID Logo](http://i68.tinypic.com/nqpw7m.jpg)](https://veryverid.com)
 
 ### Ver.ID is for job seekers with a long history of degrees, job positions, and/or certifications Who want/needs an efficient and transparent process for verifying credentials each time s/he applies to a new job or institution
 ---
