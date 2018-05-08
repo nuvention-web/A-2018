@@ -33,10 +33,10 @@ class PagesHeader extends Component {
       >
         <Navbar.Header>
           <Navbar.Brand>
-            <NavLink to={"/dashboard"} className="nav-link">
+            <NavLink to={"/pages/login-page"} className="nav-link">
               {this.state.width > 429
-                ? "Light Bootstrap Dashboard Pro React"
-                : "LBD PRO React"}
+                ? "VerID"
+                : "VerID"}
             </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle onClick={this.mobileSidebarToggle} />
@@ -59,12 +59,6 @@ class PagesHeader extends Component {
               <NavLink to={"/pages/register-page"} className="nav-link">
                 <i className="fa fa-user-circle-o" />
                 <p>Register</p>
-              </NavLink>
-            </li>
-            <li className={this.activeRoute("lock-screen-page")}>
-              <NavLink to={"/pages/lock-screen-page"} className="nav-link">
-                <i className="fa fa-lock" />
-                <p>Lock Screen</p>
               </NavLink>
             </li>
           </ul>

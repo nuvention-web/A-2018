@@ -100,11 +100,6 @@ const events = [
 //
 
 const us_flag = require("../assets/img/flags/AD.png");
-const de_flag = require("../assets/img/flags/DE.png");
-const au_flag = require("../assets/img/flags/AU.png");
-const gb_flag = require("../assets/img/flags/GB.png");
-const ro_flag = require("../assets/img/flags/RO.png");
-const br_flag = require("../assets/img/flags/BR.png");
 
 const table_data = [
   { flag: us_flag, country: "You added a new education data",  percentage: "Today at 12:30 PM" },

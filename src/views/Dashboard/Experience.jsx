@@ -1,38 +1,18 @@
 import React, { Component } from "react";
 import { Grid, Col, Row } from "react-bootstrap";
 // react component used to create charts
-import ChartistGraph from "react-chartist";
+// import ChartistGraph from "react-chartist";
 // react components used to create a SVG / Vector map
-import { VectorMap } from "react-jvectormap";
+// import { VectorMap } from "react-jvectormap";
 
-import Card from "components/Card/Card.jsx";
+// import Card from "components/Card/Card.jsx";
 import ExperienceCard from "components/Card/ExperienceCard.jsx";
-import Tasks from "components/Tasks/Tasks.jsx";
+// import Tasks from "components/Tasks/Tasks.jsx";
 
 import {
-  dataPie,
-  dataSales,
-  optionsSales,
-  responsiveSales,
-  dataBar,
-  optionsBar,
-  responsiveBar,
   table_data
 } from "variables/Variables.jsx";
 
-var mapData = {
-  AU: 760,
-  BR: 550,
-  CA: 120,
-  DE: 1300,
-  FR: 540,
-  GB: 690,
-  GE: 200,
-  IN: 200,
-  RO: 600,
-  RU: 300,
-  US: 2920
-};
 
 class Dashboard extends Component {
   createTableData() {
