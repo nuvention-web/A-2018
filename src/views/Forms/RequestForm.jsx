@@ -3,7 +3,6 @@ import {
   Grid,
   Row,
   Col,
-  Form,
   FormGroup,
   FormControl,
   ControlLabel
@@ -230,7 +229,7 @@ class ValidationForms extends Component {
                       <FormGroup>
 
                         <ControlLabel>
-                          Email adress: <span className="star">*</span>
+                          Email address: <span className="star">*</span>
                         </ControlLabel>
                         <FormControl
                           type="text"
