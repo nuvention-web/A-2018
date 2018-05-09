@@ -14,14 +14,39 @@ import {  table_data
 
 
 class Dashboard extends Component {
-  state = {
-    response: ''
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      response: '',
+      expCount: 0,
+      users: []
+    };
+    this.user = {
+        users: [],
+        modalIsOpen: false,
+        name: '',
+        email: '',
+        msg: '',
+        id: 0
+    }
+    // this.openModal = this.openModal.bind(this);
+}
+  handleEdit(event) {
+    event.preventDefault();
 
+  }
   componentDidMount() {
     this.callApi()
-      .then(res => this.setState({ response: res.express }))
+      .then(res => this.setState({ users: res }))
       .catch(err => console.log(err));
+
+    this.getExperiennceCount()
+      .then(res => this.setState({ expCount: res.exp }))
+      .catch(err => console.log(err));
+
+    this.getData()
+      .then(res => this.setState({ users: res.exp }))
+      .catch(err => console.log(err));      
   }
 
   callApi = async () => {
@@ -29,10 +54,27 @@ class Dashboard extends Component {
     const body = await response.json();
 
     if (response.status !== 200) throw Error(body.message);
-
+    console.log(body);
     return body;
   }
-  
+  getExperiennceCount = async () => {
+    const response = await fetch('/api/getExperienceCount');
+    const body = await response.json();
+
+    if (response.status !== 200) throw Error(body.message);
+    console.log(body);
+    return body;
+  }
+
+  getData = async () => {
+    const response = await fetch('/api/showData');
+    const body = await response.json();
+
+    if (response.status !== 200) throw Error(body.message);
+    console.log(body);
+    return body;
+  }
+
   createTableData() {
     var tableRows = [];
     for (var i = 0; i < table_data.length; i++) {
@@ -60,7 +102,8 @@ class Dashboard extends Component {
               <StatsCard
                 bigIcon={<i className="pe-7s-portfolio text-verid" />}
                 statsText="Experience"
-                statsValue="1"
+
+                statsValue="3"
                 statsValue2="Pending: 1"
                 statsIcon={<i className="fa fa-arrow-right" />}
                 statsIconText="See all"
@@ -76,6 +119,8 @@ class Dashboard extends Component {
                 statsIconText="See all"
               />
             </Col>
+            
+            
         {/*    <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-graph1 text-danger" />}
@@ -96,12 +141,12 @@ class Dashboard extends Component {
             </Col> */}
           </Row>
           <Row>
-            <Col md={12}>
+            <Col md={8}>
               <Card
                 title="Recent Activity"
                 content={
                   <Row>
-                    <Col md={5}>
+                    <Col md={12}>
                       <div className="table-responsive">
                         <table className="table">
                           <tbody>{this.createTableData()}</tbody>

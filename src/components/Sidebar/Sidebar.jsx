@@ -97,7 +97,7 @@ class Sidebar extends Component {
                 }
               >
                 <span>
-                  Jishnu Pradeep  
+                  John Doe  
                   <b
                     className={
                       this.state.openAvatar ? "caret rotate-180" : "caret"

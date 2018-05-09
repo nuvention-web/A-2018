@@ -102,8 +102,14 @@ const events = [
 const us_flag = require("../assets/img/flags/AD.png");
 
 const table_data = [
-  { flag: us_flag, country: "You added a new education data",  percentage: "Today at 12:30 PM" },
-  { flag: us_flag, country: "You created an account",  percentage: "04/14/2018 at 10:00 PM" }
+  { flag: us_flag, country: "You added a new experience data",  percentage: "04/25/2018 at 09:53 PM" },
+  { flag: us_flag, country: "Your experience data was verified",  percentage: "04/25/2018 at 9:50 PM" },
+  { flag: us_flag, country: "You added a new experience data",  percentage: "04/20/2018 at 8:42 PM" },
+  { flag: us_flag, country: "You added a new experience data",  percentage: "04/15/2018 at 3:22 PM" },
+  { flag: us_flag, country: "You added a new education data",  percentage: "04/14/2018 at 4:12 PM" },
+  { flag: us_flag, country: "You added a new education data",  percentage: "04/14/2018 at 4:15 PM" },
+  { flag: us_flag, country: "You created an account",  percentage: "04/14/2018 at 10:12 PM" },
+ 
 
 ];
 

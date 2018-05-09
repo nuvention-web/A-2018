@@ -13,7 +13,7 @@ class LockScreenPage extends Component {
           <div className="author">
             <img alt="..." className="avatar" src={avatar} />
           </div>
-          <h4>Tania Andrew</h4>
+          <h4>John Doe</h4>
           <FormGroup>
             <FormControl type="password" placeholder="Enter Password" />
           </FormGroup>
