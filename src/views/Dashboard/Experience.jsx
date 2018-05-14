@@ -43,19 +43,30 @@ class Dashboard extends Component {
                 bigIcon={<i className="pe-7s-portfolio text-verid" />}
                 statsText="Marketing Analyst"
                 statsValue="Delta Corp"
-                statsValue2="April 2015 &nbsp; - &nbsp; January 2018" 
+                statsValue2="April 2015 &nbsp; - &nbsp; January 2017" 
                 statsIcon={<i className="fa fa-check-circle"  />}
-                statsIconText="Verified OnBlock&#8482; "
+                statsIconText={<a href="https://ropsten.etherscan.io/tx/0x9388c0e0b1e7bd7c2203b98edf642183ae40027cb0d9e371463e103f95a45d62" target="_blank">"Verified OnBlock&#8482;</a>}
               />
           </Col>
-</Row>
-           <Row>
             <Col lg={5} sm={9}>
               <ExperienceCard
                 bigIcon={<i className="pe-7s-portfolio text-verid" />}
                 statsText="Product Manager"
                 statsValue="ABC Inc"
-                statsValue2="February 2018 &nbsp; - &nbsp; April 2018" 
+                statsValue2="February 2017 &nbsp; - &nbsp; January 2018" 
+                statsIcon={<i className="fa fa-close"  />}
+                statsIconText="Not Verified "
+              />
+          </Col>
+          </Row>
+          <Row>
+
+          <Col lg={5} sm={12}>
+              <ExperienceCard
+                bigIcon={<i className="pe-7s-portfolio text-verid" />}
+                statsText="Product Designer"
+                statsValue="XYZ Corp"
+                statsValue2="February 2018 &nbsp; - &nbsp; May 2018" 
                 statsIcon={<i className="fa fa-close"  />}
                 statsIconText="Not Verified "
               />

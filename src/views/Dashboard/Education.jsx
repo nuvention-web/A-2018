@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { Grid } from "react-bootstrap";
+import { Grid, Col, Row } from "react-bootstrap";
+import ExperienceCard from "components/Card/ExperienceCard.jsx";
+
 // react component used to create charts
 // import ChartistGraph from "react-chartist";
 // react components used to create a SVG / Vector map
@@ -38,30 +40,28 @@ class Dashboard extends Component {
     return (
       <div className="main-content">
         <Grid fluid>
-    {/*     <Row>
+      <Row>
             <Col lg={5} sm={9}>
               <ExperienceCard
                 bigIcon={<i className="pe-7s-portfolio text-verid" />}
-                statsText="Marketing Analyst"
-                statsValue="Delta Corp"
-                statsValue2="April 2015 &nbsp; - &nbsp; January 2018" 
-                statsIcon={<i className="fa fa-check-circle"  />}
-                statsIconText="Verified OnBlock&#8482; "
-              />
-          </Col>
-</Row>
-           <Row>
-            <Col lg={5} sm={9}>
-              <ExperienceCard
-                bigIcon={<i className="pe-7s-portfolio text-verid" />}
-                statsText="Product Manager"
-                statsValue="ABC Inc"
-                statsValue2="February 2018 &nbsp; - &nbsp; April 2018" 
+                statsText="B.S Economics"
+                statsValue="University of Texas, Dallas"
+                statsValue2="April 2009 &nbsp; - &nbsp; January 2012" 
                 statsIcon={<i className="fa fa-close"  />}
-                statsIconText="Not Verified "
+                statsIconText= "Not Verified"
               />
           </Col>
-
+            <Col lg={5} sm={9}>
+              <ExperienceCard
+                bigIcon={<i className="pe-7s-portfolio text-verid" />}
+                statsText="M.S Product Design and Manufacture"
+                statsValue="University of Texas, Dallas"
+                statsValue2="February 2013 &nbsp; - &nbsp; April 2014" 
+                statsIcon={<i className="fa fa-close"  />}
+                statsIconText="Not Verified"
+              />
+          </Col> </Row>
+ {/*  
   
 
             <Col lg={3} sm={6}>
