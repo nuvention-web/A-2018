@@ -45,6 +45,7 @@ class Dashboard extends Component {
                 statsValue="Delta Corp"
                 statsValue2="April 2015 &nbsp; - &nbsp; January 2017" 
                 statsIcon={<i className="fa fa-check-circle"  />}
+                // eslint-disable-next-line
                 statsIconText={<a href="https://ropsten.etherscan.io/tx/0x9388c0e0b1e7bd7c2203b98edf642183ae40027cb0d9e371463e103f95a45d62" target="_blank">"Verified OnBlock&#8482;</a>}
               />
           </Col>
