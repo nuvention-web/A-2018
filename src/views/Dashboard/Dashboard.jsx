@@ -104,7 +104,7 @@ class Dashboard extends Component {
                 statsText="Experience"
 
                 statsValue="3"
-                statsValue2="Pending: 1"
+                statsValue2="Pending: 2"
                 statsIcon={<i className="fa fa-arrow-right" />}
                 statsIconText="See all"
               />
@@ -113,8 +113,8 @@ class Dashboard extends Component {
               <StatsCard
                 bigIcon={<i className="pe-7s-study text-verid" />}
                 statsText="Education"
-                statsValue="0"
-                statsValue2="Pending: 0"
+                statsValue="2"
+                statsValue2="Pending: 2"
                 statsIcon={<i className="fa fa-arrow-right" />}
                 statsIconText="See all"
               />

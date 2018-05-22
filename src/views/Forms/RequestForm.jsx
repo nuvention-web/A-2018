@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import report from "assets/report.pdf";
+
+
 import {
   Grid,
   Row,
@@ -215,6 +218,7 @@ class ValidationForms extends Component {
           )
         });
   }
+
   render() {
     return (
       <div className="main-content">
@@ -245,6 +249,8 @@ class ValidationForms extends Component {
                         <span className="star">*</span> Required fields
                       </div>
 
+
+
                       <Button
                         bsStyle="info"
                         fill
@@ -269,21 +275,15 @@ class ValidationForms extends Component {
                 <Card
                   textCenter
                   title="Download PDF"
-                  content={
-                    <div>
-                     
-                    </div>
-                  }
                   ftTextCenter
                   legend={
-                    <Button
-                      bsStyle="info"
-                      fill
-                      wd
-                      onClick={this.handleLoginSubmit.bind(this)}
-                    >
+                    <a href={report} download="Generated Report">
+                    <Button bsStyle="info" fill wd>
                       Download
-                    </Button>
+                    </Button> </a>
+
+                     
+
                   }
                 />
               </form>

@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 const app = express();
 const mysql = require('mysql');
 var getStudent;
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 
 var con = mysql.createConnection({
